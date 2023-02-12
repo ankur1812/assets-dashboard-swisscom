@@ -1,0 +1,35 @@
+.asset-card {
+    border: 1px solid royalblue;
+    height: 260px;
+    width: 240px;
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.attr-info {
+    /* display: flex; */
+    gap: 4px;
+    width: 40%;
+    min-width: 40%;
+}
+
+.main-info {
+    margin-top: 1.2rem;
+}
+.asset-name { 
+    font-size: 1.2 rem;
+    margin-bottom: 1 rem;
+}
+
+.status-icon {
+    width: 8px;
+    height: 8px;
+    background-color: silver;
+    margin-top: 4px;
+    border-radius: 50%;
+}
+.status-icon.Running {background: green;}
+.status-icon.Stopped {background: crimson;}
+.status-icon.MigrationFailed {background: darkgoldenrod;}

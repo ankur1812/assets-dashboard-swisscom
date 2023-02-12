@@ -1,3 +1,7 @@
-<pre>
-  {{ apiValue | json}}
-</pre>
+<div class="dashboard-assets">
+  <div *ngFor = "let asset of assets">
+    <app-asset-card [info] = "asset"></app-asset-card>
+  </div>
+</div>
+
+<pre>{{ assets | json}}</pre>

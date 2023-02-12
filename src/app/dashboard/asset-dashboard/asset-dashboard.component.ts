@@ -8,16 +8,16 @@ import {assets} from '../store/dashboard.reducer'
 @Component({
   selector: 'app-asset-dashboard',
   templateUrl: 'asset-dashboard.component.html',
-  styles: []
+  styleUrls: ['asset-dashboard.component.css']
 })
 export class AssetDashboardComponent implements OnInit {
-  apiValue: Asset[] = [];
+  assets: Asset[] = [];
 
   constructor(private store: Store<any>) { }
   
   ngOnInit(): void {
     this.store.dispatch(new FindAll());
-    this.store.pipe(select(assets)).subscribe(d => (this.apiValue = d));
+    this.store.pipe(select(assets)).subscribe(data => (this.assets = data));
   }
 
 }

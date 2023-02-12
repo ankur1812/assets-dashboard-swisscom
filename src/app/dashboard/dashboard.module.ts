@@ -8,18 +8,25 @@ import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from '@ngrx/store';
 import { DashboardEffects } from './store/dashboard.effect';
 import * as fromReducer from './store/dashboard.reducer';
+import { LabeledViewComponent } from './labeled-view/labeled-view.component';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; // Remove
+
+// import { RamPipe } from '../pipes/ram.pipe';
+// import { UserEmailPipe } from '../pipes/user_from_email.pipe';
 
 @NgModule({
   declarations: [
     AssetDashboardComponent,
-    AssetCardComponent
+    AssetCardComponent,
+    // RamPipe,
+    // UserEmailPipe,
+    LabeledViewComponent
   ],
   imports: [
     CommonModule,    
-		/* NgRx */
+    // FontAwesomeModule,
 		StoreModule.forFeature('dashboard', fromReducer.reducer),
 		EffectsModule.forFeature([DashboardEffects]),
-    // Router
     DashboardRoutingModule
   ]
 })

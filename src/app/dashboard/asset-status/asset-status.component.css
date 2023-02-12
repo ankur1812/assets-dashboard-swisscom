@@ -1,0 +1,9 @@
+.asset-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.attr-value {
+    font-size: 1.25rem;
+    margin-left: 14px;
+}
