@@ -1,7 +1,8 @@
+<dashboard-stats [assets]="assets"></dashboard-stats>
 <div class="dashboard-assets">
   <div *ngFor = "let asset of assets">
     <app-asset-card [info] = "asset"></app-asset-card>
   </div>
 </div>
 
-<pre>{{ assets | json}}</pre>
+<!-- <pre>{{ assets | json}}</pre> -->

@@ -1,18 +1,26 @@
 .asset-card {
-    border: 1px solid royalblue;
+    border: 1px solid #242424;
     height: 260px;
     width: 240px;
     padding: 0.5rem;
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(6 24 44 / 40%), 0 4px 6px -1px rgb(6 24 44 / 65%), inset 0 1px 0 hsl(0deg 0% 100% / 8%);
+}
+.asset-card:hover {
+    transform: scale(1.015);
+    /* opacity: 0.9; */
 }
 
 .attr-info {
     /* display: flex; */
     gap: 4px;
-    width: 40%;
-    min-width: 40%;
+    width: 47%;
+    min-width: 47%;
+    /* justify-content: space-evenly; */
 }
 
 .main-info {
@@ -23,6 +31,9 @@
     margin-bottom: 1 rem;
 }
 
+.status-info {
+    font-size: 12.5px;
+}
 .status-icon {
     width: 8px;
     height: 8px;
@@ -33,3 +44,11 @@
 .status-icon.Running {background: green;}
 .status-icon.Stopped {background: crimson;}
 .status-icon.MigrationFailed {background: darkgoldenrod;}
+
+.tag {
+    border: 1px solid gray;
+    background: ghostwhite;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+}

@@ -9,18 +9,20 @@ import { StoreModule } from '@ngrx/store';
 import { DashboardEffects } from './store/dashboard.effect';
 import * as fromReducer from './store/dashboard.reducer';
 import { LabeledViewComponent } from './labeled-view/labeled-view.component';
+import { StatsComponent } from './stats/stats.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; // Remove
 
-// import { RamPipe } from '../pipes/ram.pipe';
+import { RamPipe } from '../pipes/ram.pipe';
 // import { UserEmailPipe } from '../pipes/user_from_email.pipe';
 
 @NgModule({
   declarations: [
     AssetDashboardComponent,
     AssetCardComponent,
-    // RamPipe,
+    RamPipe,
     // UserEmailPipe,
-    LabeledViewComponent
+    LabeledViewComponent,
+    StatsComponent
   ],
   imports: [
     CommonModule,    
