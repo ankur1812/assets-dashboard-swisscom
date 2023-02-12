@@ -1,5 +1,24 @@
 # Technical Assessment UI
 
+
+The Angular 14 project for the Assets Dashboard. 
+
+### Setup Guide: 
+
+- Clone / Download the project.
+```git clone https://github.com/ankur1812/assets-dashboard-swisscom```
+
+- Go inside the directory
+`cd assets-dashboard-swisscom`
+
+- Install the npm dependencies
+`npm install`
+
+- Run the project (@ port 4200)
+`ng serve`
+
+
+
 ## Introduction
 
 Hello and welcome to your angular coding excercise! During the following process you will be creating a small dashboard using Angular 14.
