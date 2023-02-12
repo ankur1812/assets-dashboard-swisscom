@@ -12,12 +12,25 @@ import {assets} from '../store/dashboard.reducer'
 })
 export class AssetDashboardComponent implements OnInit {
   assets: Asset[] = [];
+  results: Asset[] = [];
+  searchStr: string = "";
 
   constructor(private store: Store<any>) { }
   
   ngOnInit(): void {
     this.store.dispatch(new FindAll());
-    this.store.pipe(select(assets)).subscribe(data => (this.assets = data));
+    this.store.pipe(select(assets)).subscribe(data => {this.assets = data; this.results= data});
+  }
+
+  filterResults(): void {
+    let searchStr: string = this.searchStr.toUpperCase();
+    let searchAttribs: string[] = ['name', 'location', 'owner', 'createdBy', 'status'];
+    if (!searchStr) this.assets = [...this.results];
+    else {
+      this.assets = this.results.filter( (asset:any) => {
+        return !!asset && searchAttribs.some( (attr:string) => asset[attr]?.toUpperCase().includes(searchStr))
+      })  
+    }
   }
 
 }

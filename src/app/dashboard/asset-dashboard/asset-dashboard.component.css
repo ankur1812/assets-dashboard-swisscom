@@ -2,3 +2,27 @@
   display: flex;
   flex-wrap: wrap;
 }
+.search-label {
+  font-size: 1.2rem;
+}
+.searchbox {
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2 rem;
+  width: 50%;
+
+}
+button {
+  padding:10px;
+  background:royalblue;
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.search-results-msg button {
+  border: none;
+  text-decoration: underline;
+  background-color: inherit;
+  color: initial;
+}

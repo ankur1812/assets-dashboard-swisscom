@@ -1,8 +1,15 @@
-<dashboard-stats [assets]="assets"></dashboard-stats>
+<dashboard-stats [assets]="results"></dashboard-stats>
+<div class="search-label"> Search Assets here</div>
+<input class="searchbox" [(ngModel)]="searchStr" 
+  placeholder="Filter using name, status, location, or owner" />
+<button (click)="filterResults()"> <i class="fa fa-search"></i></button>
+
+<div class="search-results-msg" *ngIf="results.length > assets.length"> 
+  Found {{assets.length}} result(s) for "{{searchStr}}". 
+  <button (click)="searchStr=''; filterResults()"> Clear Search</button>
+</div>
 <div class="dashboard-assets">
   <div *ngFor = "let asset of assets">
     <app-asset-card [info] = "asset"></app-asset-card>
   </div>
 </div>
-
-<!-- <pre>{{ assets | json}}</pre> -->
