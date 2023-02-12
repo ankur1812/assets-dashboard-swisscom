@@ -19,21 +19,21 @@
         width="120" height="120">
       </span>
       <div class="attr-info main-info" >
-        <span class="asset-name">Asset : {{ assetInfo?.name }} </span>
+        <span class="asset-name">Asset : {{ assetInfo.name }} </span>
         <div class="attr-info" class="status-info flex">
-          <div *ngIf="!!assetInfo?.status" [class]=" 'status-icon ' + assetInfo?.status "></div>
-          {{assetInfo?.status}}
+          <div *ngIf="!!assetInfo.status" [class]=" 'status-icon ' + assetInfo.status "></div>
+          {{assetInfo.status}}
         </div>
         <div class="flex">
-          <div class="tag" *ngFor="let tag of assetInfo?.tags">
+          <div class="tag" *ngFor="let tag of assetInfo.tags">
             <span >{{tag}}</span>
           </div>
         </div>    
       </div>
     </div>
-    <labeled-view class="attr-info" icon="fa fa-microchip" [label] = "'CPUs'" [value]="assetInfo?.cpu"></labeled-view> 
+    <labeled-view class="attr-info" icon="fa fa-microchip" [label] = "'CPUs'" [value]="assetInfo.cpu"></labeled-view> 
     <labeled-view class="attr-info" icon="fa fa-memory" [label] = "'Memory'" [value]="ramInGb"></labeled-view>
-    <labeled-view class="attr-info" icon="fa fa-database" [label] = "'Datacenter'" [value]="assetInfo?.location"></labeled-view> 
+    <labeled-view class="attr-info" icon="fa fa-database" [label] = "'Datacenter'" [value]="assetInfo.location"></labeled-view> 
 
     <span class="cursor-pointer  linked-server" *ngIf="!!parentAsset" (click)="goToDetailsPage(parentAsset.id)">
         <labeled-view class="attr-info" icon="fa fa-desktop" [label] = "'Parent Asset'" [value]="parentAsset.name"></labeled-view> 

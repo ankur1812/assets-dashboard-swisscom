@@ -1,28 +1,28 @@
 
-<div *ngIf="!!assetInfo" class="asset-card" (click)="goToDetailsPage(assetInfo?.id)">
+<div *ngIf="!!assetInfo" class="asset-card" (click)="goToDetailsPage(assetInfo.id)">
   <div class="w-100">
     <span class="vm-image float-right">
       <img src="https://static.vecteezy.com/system/resources/previews/000/422/764/original/monitor-icon-vector-illustration.jpg"
       width="120" height="120">
     </span>
     <div class="attr-info main-info" >
-      <span class="asset-name">{{ assetInfo?.name }} </span>
+      <span class="asset-name">{{ assetInfo.name }} </span>
       <div class="attr-info" class="status-info flex">
-        <div *ngIf="!!assetInfo?.status" [class]=" 'status-icon ' + assetInfo?.status "></div>
-        {{assetInfo?.status}}
+        <div *ngIf="!!assetInfo.status" [class]=" 'status-icon ' + assetInfo.status "></div>
+        {{assetInfo.status}}`
       </div>
       <div class="flex">
-        <div class="tag" *ngFor="let tag of assetInfo?.tags">
+        <div class="tag" *ngFor="let tag of assetInfo.tags">
           <span >{{tag}}</span>
         </div>
       </div>    
     </div>
-    <!-- RAM is {{assetInfo?.ram | ram}} -->
-    <!-- Ownwer is {{ assetInfo?.owner | user_from_email}} -->
+    <!-- RAM is {{assetInfo.ram | ram}} -->
+    <!-- Ownwer is {{ assetInfo.owner | user_from_email}} -->
   </div>
-  <labeled-view class="attr-info" icon="fa fa-microchip" [label] = "'CPUs'" [value]="assetInfo?.cpu"></labeled-view> 
+  <labeled-view class="attr-info" icon="fa fa-microchip" [label] = "'CPUs'" [value]="assetInfo.cpu"></labeled-view> 
   <labeled-view class="attr-info" icon="fa fa-memory" [label] = "'Memory'" [value]="ramInGb"></labeled-view>
-  <labeled-view class="attr-info" icon="fa fa-database" [label] = "'Datacenter'" [value]="assetInfo?.location"></labeled-view> 
+  <labeled-view class="attr-info" icon="fa fa-database" [label] = "'Datacenter'" [value]="assetInfo.location"></labeled-view> 
   <labeled-view class="attr-info" icon="fa fa-user" [label] = "'Owner'" [value]="owner"></labeled-view> 
 
   <!-- <pre>{{ assetInfo | json}}</pre> -->
