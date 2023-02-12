@@ -26,3 +26,28 @@ button {
   background-color: inherit;
   color: initial;
 }
+
+.dashboard-loader {
+  height: 5px;
+  max-width:80%;
+  margin-left: 10px;
+}
+
+.loader-card {
+  width: 250px;
+  height: 278px;
+}
+
+.card-loader .animated-card {
+  display: block;
+  width: 100px;
+  height: 60px;
+  margin: 5px ;
+}
+
+/* .card-loader .animated-card {
+  display: block;
+  width: 250px;
+  height: 278px;
+  margin: 10px 40px 0 -10px ;
+} */

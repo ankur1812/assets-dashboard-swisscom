@@ -1,4 +1,15 @@
 <a class="float-right" routerLink="/dashboard"> <i class="fa fa-arrow-left"></i> back to dashboard</a>
+
+<div *ngIf="!notFound && !assetInfo" class="details-loader">
+  <animated-div class="details-row-top block"></animated-div>
+  <animated-div class="details-row"></animated-div>
+  <animated-div class="details-row"></animated-div>
+  <animated-div class="details-row"></animated-div>
+  <animated-div class="details-row"></animated-div>
+  <animated-div class="details-row"></animated-div>
+</div>
+
+
 <div *ngIf="!!assetInfo" class="asset-details-all">
     <!-- show card -->
     <!-- <app-asset-card [info]="assetInfo"></app-asset-card> -->

@@ -19,11 +19,10 @@ export class AssetCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.ramInGb = this.assetInfo?.ram ? this.assetInfo?.ram / (1024 * 1024 * 1024) + ' GB' : ''
-    this.owner = this.assetInfo?.owner ? this.assetInfo?.owner.split('@')[0] : ''
+  this.owner = this.assetInfo?.owner ? this.assetInfo?.owner?.replace('.' ,' ').split('@')[0] : ''
   }
 
   goToDetailsPage(id: any): void {
     this.router.navigate(['dashboard/details/' + id]);
-    debugger;
   }
 }

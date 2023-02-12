@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body {
+    font-family: SFProText-Medium;
     padding: 0;
     margin: 0;
 }
@@ -14,6 +15,7 @@ html, body {
     background-color: royalblue;
     color: white;
     z-index: 99999;
+    border-bottom: 1px solid #242424;
 }
 
 .contents {
@@ -34,14 +36,23 @@ html, body {
 
 .w-100 {width: 100%}
 .w-70 { width: 70%;}
+.w-50 { width: 50%;}
 
 .cursor-pointer {
     cursor: pointer;
 }
 
+.block { display: block;}
+
 .bold {
     font-weight: bold;
 }
+
+/* .m-l-md { margin-left: 15px;}
+.h-10 { height: 10px; }
+.h-40 { height: 40px; }
+.h-60 { height: 60px; }
+.h-80 { height: 80px; } */
 /* .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,

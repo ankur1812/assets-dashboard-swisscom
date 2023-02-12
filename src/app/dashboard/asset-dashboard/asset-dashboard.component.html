@@ -8,8 +8,21 @@
   Found {{assets.length}} result(s) for "{{searchStr}}". 
   <button (click)="searchStr=''; filterResults()"> Clear Search</button>
 </div>
+
+<div *ngIf="assets.length == 0" class="block">
+  <div>Loading dashboard..</div>
+  <animated-div class="dashboard-loader"></animated-div>
+  <!-- <div *ngFor="let x of [0,1,2,3,4]" class="loader-card card-loader">
+    <animated-div class="animated-card"></animated-div>
+    <animated-div class="animated-card"></animated-div>
+  </div> -->
+</div>
+
+
+
 <div class="dashboard-assets">
   <div *ngFor = "let asset of assets">
     <app-asset-card [info] = "asset"></app-asset-card>
   </div>
 </div>
+

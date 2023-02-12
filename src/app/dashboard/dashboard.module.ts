@@ -15,6 +15,7 @@ import { StatsComponent } from './stats/stats.component';
 
 import { RamPipe } from '../pipes/ram.pipe';
 import { AssetDetailsComponent } from './details-page/asset-details/asset-details.component';
+import { SkeletelDivComponent } from './skeleton-animations/skeletel-div/skeletel-div.component';
 // import { UserEmailPipe } from '../pipes/user_from_email.pipe';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { AssetDetailsComponent } from './details-page/asset-details/asset-detail
     // UserEmailPipe,
     LabeledViewComponent,
     StatsComponent,
+    SkeletelDivComponent,
     AssetDetailsComponent
   ],
   imports: [

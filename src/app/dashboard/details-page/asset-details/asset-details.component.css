@@ -6,6 +6,27 @@
     /* color: red; */
     /* color: #242424; */
     color: royalblue;
-
-
 }
+
+.details-loader .details-row-top {
+    /* display: block; */
+    width: 300px;
+    height: 110px;
+    margin: 10px 0px;
+}
+
+.details-loader .details-row {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 18px 0px;
+}
+
+.details-row:nth-child(2), 
+.details-row:nth-child(3), 
+.details-row:nth-child(4)
+{
+    width: 180px !important;
+}
+
+
