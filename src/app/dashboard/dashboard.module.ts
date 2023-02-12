@@ -14,6 +14,7 @@ import { LabeledViewComponent } from './labeled-view/labeled-view.component';
 import { StatsComponent } from './stats/stats.component';
 
 import { RamPipe } from '../pipes/ram.pipe';
+import { AssetDetailsComponent } from './details-page/asset-details/asset-details.component';
 // import { UserEmailPipe } from '../pipes/user_from_email.pipe';
 
 @NgModule({
@@ -23,7 +24,8 @@ import { RamPipe } from '../pipes/ram.pipe';
     RamPipe,
     // UserEmailPipe,
     LabeledViewComponent,
-    StatsComponent
+    StatsComponent,
+    AssetDetailsComponent
   ],
   imports: [
     CommonModule,    

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Asset } from 'src/app/interfaces/asset';
 // import { RamPipe } from 'src/app/pipes/ram.pipe';
 
@@ -11,14 +12,18 @@ export class AssetCardComponent implements OnInit {
   @Input('info')
   assetInfo: Asset | null = null;
   
-  ramInMb: string = '';
+  ramInGb: string = '';
   owner: string = '';
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
-    this.ramInMb = this.assetInfo?.ram ? this.assetInfo?.ram / (1024 * 1024) + ' MB' : ''
+    this.ramInGb = this.assetInfo?.ram ? this.assetInfo?.ram / (1024 * 1024 * 1024) + ' GB' : ''
     this.owner = this.assetInfo?.owner ? this.assetInfo?.owner.split('@')[0] : ''
   }
 
+  goToDetailsPage(id: any): void {
+    this.router.navigate(['dashboard/details/' + id]);
+    debugger;
+  }
 }

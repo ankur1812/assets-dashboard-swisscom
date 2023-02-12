@@ -1,0 +1,11 @@
+.asset-details-all .attr-info {
+    margin: 10px;
+}
+
+.linked-server > labeled-view, .linked-server > .attr-info > .attr-value {
+    /* color: red; */
+    /* color: #242424; */
+    color: royalblue;
+
+
+}

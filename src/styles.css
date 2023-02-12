@@ -9,8 +9,8 @@ html, body {
     position: fixed;
     top: 0;
     width: 100vw;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    padding: 0.7rem 2rem;
     background-color: royalblue;
     color: white;
     z-index: 99999;
@@ -21,11 +21,27 @@ html, body {
     padding: 1rem 2rem;
 }
 
+.tag {
+    border: 1px solid gray;
+    background: ghostwhite;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
 .flex {display: flex; flex-wrap: wrap; gap: 4px;}
 .float-right {float: right}
 
 .w-100 {width: 100%}
+.w-70 { width: 70%;}
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
 /* .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,

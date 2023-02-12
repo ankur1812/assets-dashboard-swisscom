@@ -8,11 +8,11 @@
     flex-wrap: wrap;
     /* border-radius: 4px; */
     cursor: pointer;
-    box-shadow: 0 0 0 1px rgb(6 24 44 / 40%), 0 4px 6px -1px rgb(6 24 44 / 65%), inset 0 1px 0 hsl(0deg 0% 100% / 8%);
+    box-shadow: 0 0 0 1px rgb(6 24 44 / 40%), 0 2px 3px -1px rgb(6 24 44 / 65%), inset 0 1px 0 hsl(0deg 0% 100% / 8%);
 }
 .asset-card:hover {
     transform: scale(1.015);
-    /* opacity: 0.9; */
+    opacity: 0.9;
 }
 
 .attr-info {
@@ -44,11 +44,3 @@
 .status-icon.Running {background: green;}
 .status-icon.Stopped {background: crimson;}
 .status-icon.MigrationFailed {background: darkgoldenrod;}
-
-.tag {
-    border: 1px solid gray;
-    background: ghostwhite;
-    padding: 2px;
-    margin: 2px;
-    border-radius: 5px;
-}

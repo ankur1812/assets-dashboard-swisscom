@@ -9,8 +9,9 @@ const routes: Routes = [
   },
   {
     path: '**',
-    loadChildren: () => import('./dashboard/dashboard.module').then( x=> x.DashboardModule)
-  }
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
