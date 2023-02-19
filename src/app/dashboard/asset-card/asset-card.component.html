@@ -17,15 +17,9 @@
         </div>
       </div>    
     </div>
-    <!-- RAM is {{assetInfo.ram | ram}} -->
-    <!-- Ownwer is {{ assetInfo.owner | user_from_email}} -->
   </div>
   <labeled-view class="attr-info" icon="fa fa-microchip" [label] = "'CPUs'" [value]="assetInfo.cpu"></labeled-view> 
   <labeled-view class="attr-info" icon="fa fa-memory" [label] = "'Memory'" [value]="ramInGb"></labeled-view>
   <labeled-view class="attr-info" icon="fa fa-database" [label] = "'Datacenter'" [value]="assetInfo.location"></labeled-view> 
   <labeled-view class="attr-info" icon="fa fa-user" [label] = "'Owner'" [value]="owner"></labeled-view> 
-
-  <!-- <pre>{{ assetInfo | json}}</pre> -->
-
-
 </div>

@@ -1,6 +1,5 @@
 .animated-row {
     display: block;
-    /* margin-left: 26px; */
     margin-bottom: 12px; 
     width: 75%;
     height: 20px;
@@ -20,32 +19,3 @@ to { background-position-x: -200%; }
     background-size: 200% 100%;
     animation: 3s shine linear infinite;
 }
-
-
-/* .is-loading:nth-child(2) {
-    height: 70px;
-} */
-
-
-.is-loading p {
-    background: gray;
-    height: 20px;
-    margin-top: 5px;
-    width: 65%;
-}
-
-.is-loading h3 {
-    background: #eee;
-    height: 20px;
-    margin-top: 5px;
-    width: 12%;
-}
-
-.is-loading h4 {
-    background: ghostwhite;
-    height: 100px;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 375px;
-}
-

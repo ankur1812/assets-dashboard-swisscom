@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Asset } from 'src/app/interfaces/asset';
-// import { RamPipe } from 'src/app/pipes/ram.pipe';
 
 @Component({
   selector: 'app-asset-card',

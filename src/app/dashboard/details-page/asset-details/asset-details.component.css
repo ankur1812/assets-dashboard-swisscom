@@ -3,13 +3,10 @@
 }
 
 .linked-server > labeled-view, .linked-server > .attr-info > .attr-value {
-    /* color: red; */
-    /* color: #242424; */
     color: royalblue;
 }
 
 .details-loader .details-row-top {
-    /* display: block; */
     width: 300px;
     height: 110px;
     margin: 10px 0px;
