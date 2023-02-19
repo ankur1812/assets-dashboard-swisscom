@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Asset } from 'src/app/interfaces/asset';
 import {FindAll} from '../store/dashboard.action'
-import {assets} from '../store/dashboard.reducer'
+import {assets, DashboardState} from '../store/dashboard.reducer'
 
 @Component({
   selector: 'app-asset-dashboard',
@@ -15,7 +15,7 @@ export class AssetDashboardComponent implements OnInit {
   results: Asset[] = [];
   searchStr: string = "";
 
-  constructor(private store: Store<any>) { }
+  constructor(private store: Store<DashboardState>) { }
   
   ngOnInit(): void {
     this.store.dispatch(new FindAll());
