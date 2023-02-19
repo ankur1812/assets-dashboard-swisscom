@@ -6,7 +6,6 @@
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
-    /* border-radius: 4px; */
     cursor: pointer;
     box-shadow: 0 0 0 1px rgb(6 24 44 / 40%), 0 2px 3px -1px rgb(6 24 44 / 65%), inset 0 1px 0 hsl(0deg 0% 100% / 8%);
 }
@@ -34,7 +33,6 @@
     max-width: 50%;
     display: inline;
     margin: 10px;
-    /* padding-left: 0; */
     margin-left:0px;
 }
 
@@ -42,11 +40,9 @@
     float: left;
 }
 .attr-info {
-    /* display: flex; */
     gap: 4px;
     width: 47%;
     min-width: 47%;
-    /* justify-content: space-evenly; */
 }
 
 .main-info {

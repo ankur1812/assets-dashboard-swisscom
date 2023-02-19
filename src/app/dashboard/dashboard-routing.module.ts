@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', component: AssetDashboardComponent, children: [
     {path: '', component: AssetCardComponent}
   ] },
-  { path: 'details/:id', component: AssetDetailsComponent } // TODO- this will route to new details-page module
+  { path: 'details/:id', component: AssetDetailsComponent }
 ];
 
 @NgModule({

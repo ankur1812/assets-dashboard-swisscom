@@ -19,22 +19,17 @@ export class AssetDetailsComponent implements OnInit {
     parentAsset: Asset | undefined = undefined; 
     childAsset: Asset | undefined = undefined; 
     notFound: boolean | null = false;
-    // ramInGb: string = "";
-    // owner: string = "";
-    // creator: string = "";
   
     constructor(private store: Store<any>, private actRoute: ActivatedRoute, private router: Router) { }
     
     ngOnInit(): void {
       this.assetId = parseInt(this.actRoute.snapshot.params['id']);
-      // alert(postid);
 
       this.store.dispatch(new FindAll());
       this.store.pipe(select(assets)).subscribe(data => {
         this.assetInfo = data.find( a=> !!a && a.id == this.assetId);
         if (this.assetInfo) {
           this.notFound = false; 
-          // this.ramInGb = this.assetInfo.ram / (1024 * 1024 * 1024) + ' GB';
           data.some( (asset: Asset) => {
             if (!!asset) {
               if (asset.parentId === this.assetId) this.childAsset = asset;

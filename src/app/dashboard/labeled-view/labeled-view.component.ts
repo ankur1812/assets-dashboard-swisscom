@@ -1,7 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-// import { faCoffee } from '@fortawesome/angular-fontawesome/icon/duotone-icon.component';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
 
 @Component({
   selector: 'labeled-view',
@@ -21,7 +18,6 @@ export class LabeledViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // if(this.label == 'ram' && this.value) this.value = (this.value/(1024 * 1024)) + ' MB'
   }
 
 }
