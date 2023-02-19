@@ -12,8 +12,8 @@
 
 <div *ngIf="!!assetInfo" class="asset-details-all">
     <!-- show card -->
-    <!-- <app-asset-card [info]="assetInfo"></app-asset-card> -->
-    <div class="flex" >
+    <app-asset-card id="not-card" [fullscreen]="true" [info]="assetInfo"></app-asset-card>
+    <!-- <div class="flex" >
       <span class="vm-image float-right">
         <img src="https://static.vecteezy.com/system/resources/previews/000/422/764/original/monitor-icon-vector-illustration.jpg"
         width="120" height="120">
@@ -30,10 +30,10 @@
           </div>
         </div>    
       </div>
-    </div>
-    <labeled-view class="attr-info" icon="fa fa-microchip" [label] = "'CPUs'" [value]="assetInfo.cpu"></labeled-view> 
-    <labeled-view class="attr-info" icon="fa fa-memory" [label] = "'Memory'" [value]="ramInGb"></labeled-view>
-    <labeled-view class="attr-info" icon="fa fa-database" [label] = "'Datacenter'" [value]="assetInfo.location"></labeled-view> 
+    </div> -->
+    <!-- <labeled-view class="attr-info" icon="fa fa-microchip" [label] = "'CPUs'" [value]="assetInfo.cpu"></labeled-view>  -->
+    <!-- <labeled-view class="attr-info" icon="fa fa-memory" [label] = "'Memory'" [value]="ramInGb"></labeled-view> -->
+    <!-- <labeled-view class="attr-info" icon="fa fa-database" [label] = "'Datacenter'" [value]="assetInfo.location"></labeled-view>  -->
 
     <span class="cursor-pointer  linked-server" *ngIf="!!parentAsset" (click)="goToDetailsPage(parentAsset.id)">
         <labeled-view class="attr-info" icon="fa fa-desktop" [label] = "'Parent Asset'" [value]="parentAsset.name"></labeled-view> 
@@ -43,10 +43,8 @@
         <labeled-view class="attr-info" icon="fa fa-desktop" [label] = "'Child Asset'" [value]="childAsset.name"></labeled-view> 
     </span>
 
-    <!-- <labeled-view *ngIf="!!parentAsset" class="attr-info" icon="fa fa-user" [label] = "'Parent Asset'" [value]="parentAsset.name"></labeled-view>  -->
-    <!-- <labeled-view *ngIf="!!childAsset" class="attr-info" icon="fa fa-user" [label] = "'Child Asset'" [value]="childAsset.name"></labeled-view>  -->
 
-    <labeled-view class="attr-info" icon="fa fa-user" [label] = "'Owner'" [value]="assetInfo.owner"></labeled-view> 
+    <!-- <labeled-view class="attr-info" icon="fa fa-user" [label] = "'Owner'" [value]="assetInfo.owner"></labeled-view>  -->
     <labeled-view *ngIf="!!assetInfo.createdBy" class="attr-info" icon="fa fa-user" [label] = "'Created By'" [value]="assetInfo.createdBy"></labeled-view> 
     <labeled-view class="attr-info" icon="fa fa-clock" [label] = "'Creation Time'" [value]="assetInfo.createdAt"></labeled-view> 
 
