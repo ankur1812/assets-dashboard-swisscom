@@ -11,7 +11,10 @@ import { Asset } from 'src/app/interfaces/asset';
 export class AssetCardComponent implements OnInit {
   @Input('info')
   assetInfo: Asset | null = null;
-  
+
+  @Input('fullscreen')
+  fullscreen: boolean = false;  
+
   ramInGb: string = '';
   owner: string = '';
 

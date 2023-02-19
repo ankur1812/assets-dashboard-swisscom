@@ -5,9 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Asset } from 'src/app/interfaces/asset';
 import { ErrorObject, ApiError } from 'src/app/interfaces/error';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 
 export class AssetApiService {
   endPoint: string = 'https://adb47d56-1aa9-4aa7-8ec2-77a923b80a5b.mock.pstmn.io/';

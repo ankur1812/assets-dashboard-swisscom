@@ -12,6 +12,9 @@ const initialState: DashboardState = {
 
 export function reducer(state = initialState, action: DashboardActions): DashboardState {
 	switch (action.type) {
+		case DashboardAction.GET_ASSETS: {
+			return { ...state, assets: [] };
+		}
 		case DashboardAction.GET_ASSETS_SUCCESS: {
 			return { ...state, assets: action.assets };
 		}

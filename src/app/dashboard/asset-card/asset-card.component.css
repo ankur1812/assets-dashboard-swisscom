@@ -15,6 +15,32 @@
     opacity: 0.9;
 }
 
+
+.fullscreen { 
+    cursor: initial;
+    height: inherit;
+    width: inherit;
+    padding: 0;
+    margin: 0;
+    border:0;
+    box-shadow: none;
+}
+.fullscreen:hover { 
+    transform: none;
+    opacity: 1;
+}
+.fullscreen .attr-info { 
+    width: 100%;
+    max-width: 50%;
+    display: inline;
+    margin: 10px;
+    /* padding-left: 0; */
+    margin-left:0px;
+}
+
+.fullscreen .vm-image {
+    float: left;
+}
 .attr-info {
     /* display: flex; */
     gap: 4px;
@@ -27,8 +53,8 @@
     margin-top: 1.2rem;
 }
 .asset-name { 
-    font-size: 1.2 rem;
-    margin-bottom: 1 rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .status-info {
